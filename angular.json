@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "registrarion"
+    }
+  },
+  "defaultProject": "registrarion",
+  "cli": {
+    "analytics": "67e3fbd5-14a0-49ca-a56b-8b12c83dc8eb"
+  }
 }

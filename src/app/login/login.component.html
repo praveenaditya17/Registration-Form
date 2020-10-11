@@ -1,0 +1,58 @@
+<h3 id="heading">Registration Form</h3>
+<form  (ngSubmit)="login()">
+    <!-- <table>
+      <tr>
+        <td>Reg No:</td> <td><input type="number" placeholder="Registration No." formControlName="regNo"></td>
+      </tr>
+      <tr>
+        <td>Name:</td><td><input type="text" placeholder="name" formControlName="fristName"></td>
+      </tr>
+      <tr>
+        <td>Descipline:</td><td><select formControlName="descipline">
+          <option *ngFor="let dis of Discipline" value="{{dis}}">{{dis}}</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td>Gender:</td><td><input type="radio" value="male" name="gender" formControlName="gender">male
+          <input type="radio"  value="female" name="gender" formControlName="gender">female</td>
+      </tr>
+      <tr>
+        <td>Subjects:</td><td><div *ngFor="let subject of subjectData">
+          <input type="checkbox" (change)="onChange(subject.name, $event.target.checked)">
+          {{ subject.name}}
+        </div></td>
+      </tr>
+      <tr>
+        <td><input type="submit" value="View on Console"></td><td><input type="submit" value="Store in File"></td>
+      </tr>
+    </table> -->
+    <table>
+      <tr>
+        <td>Reg No:</td> <td><input type="number" placeholder="Registration No." formControlName="regNo"></td>
+      </tr>
+      <tr>
+        <td>Name:</td><td><input type="text" placeholder="name" formControlName="fristName"></td>
+      </tr>
+      <tr>
+        <td>Descipline:</td><td><select formControlName="descipline">
+          <option *ngFor="let dis of Discipline" value="{{dis}}">{{dis}}</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td>Gender:</td><td><input type="radio" value="male" name="gender" formControlName="gender">male
+          <input type="radio"  value="female" name="gender" formControlName="gender">female</td>
+      </tr>
+      <tr>
+        <td>Subjects:</td><td>
+          <div *ngFor="let subject of subjectData">
+          <input type="checkbox" (change)="onChange(subject.name, $event.target.checked)">
+          {{ subject.name}}
+        </div></td>
+      </tr>
+      <tr>
+        <td><input type="submit" value="View on Console"></td><td><input type="submit" value="Store in File"></td>
+      </tr>
+    </table>
+  </form>
+  
+   <h1>hello</h1>
